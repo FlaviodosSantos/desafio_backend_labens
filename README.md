@@ -18,3 +18,14 @@ API para gerenciar uma lista de tarefas (to-do list). A API deve permitir que os
 - /todo/{id} - PUT - edita uma tarefa
 - /todo/{id} - DELETE - exclui uma tarefa
 
+#
+### Inserir dados automaticamente
+Dados aleatórios gerados no [Generatedata](https://generatedata.com/generator) e salvos em .csv . 
+
+Para chamar a função, no terminal do projeto, abra o terminal python digitando "python"(win) ou "python3"(linux). Importe a função e chame-a:
+```python
+from todo.views import inserir_dados
+
+inserir_dados()
+```
+

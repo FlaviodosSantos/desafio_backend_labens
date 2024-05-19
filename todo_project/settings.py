@@ -42,15 +42,13 @@ INSTALLED_APPS = [
     "todo",
 ]
 
-# paginação do rest framework
+
 REST_FRAMEWORK = {
+    # complemento do coreapi
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+    # paginação do rest framework
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 5
-}
-
-# complemento do coreapi
-REST_FRAMEWORK = {
-    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
 }
 
 MIDDLEWARE = [
