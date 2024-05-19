@@ -1,9 +1,12 @@
 import csv
 import sqlite3
 
-# função para inserir dados automaticamente no banco de dados
-# a parttir de um arquivo csv
+
 def inserir_dados():
+    """
+        função para inserir dados automaticamente no banco de dados
+        a parttir de um arquivo csv.
+    """
     conexao = sqlite3.connect(database='db.sqlite3')
     cursor = conexao.cursor() 
     
